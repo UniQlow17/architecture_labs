@@ -1,0 +1,7 @@
+[project]
+name = "laba2"
+version = "0.1.0"
+description = "Электронно-цифровая подпись (ЭЦП)"
+readme = "./README.md"
+requires-python = ">=3.11"
+dependencies = []
