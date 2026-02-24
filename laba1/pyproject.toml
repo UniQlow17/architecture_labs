@@ -2,6 +2,6 @@
 name = "laba1"
 version = "0.1.0"
 description = "Трёхзвенная клиент–серверная архитектура"
-readme = "./README.md"
+readme = "README.md"
 requires-python = ">=3.11"
 dependencies = []
