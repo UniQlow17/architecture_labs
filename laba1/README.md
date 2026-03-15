@@ -38,7 +38,7 @@
 Чтобы обновить статическую документацию в репозитории после изменений API:
 
 ```bash
-python -m app.utils.export_openapi
+uv run python -m app.utils.export_openapi
 ```
 
 Скрипт кладёт актуальную схему в `docs/openapi.json` и (при установленном PyYAML) в `docs/openapi.yaml`.
