@@ -1,0 +1,17 @@
+FROM python:3.11-slim
+
+WORKDIR /app
+
+RUN pip install --no-cache-dir \
+    alembic \
+    sqlalchemy \
+    psycopg2-binary \
+    pydantic-settings
+
+COPY alembic.ini ./
+COPY migrations ./migrations
+COPY app/__init__.py ./app/
+COPY app/core ./app/core
+COPY app/models ./app/models
+
+CMD ["alembic", "upgrade", "head"]
