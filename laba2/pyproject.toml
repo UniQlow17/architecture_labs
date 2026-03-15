@@ -4,4 +4,20 @@ version = "0.1.0"
 description = "Электронно-цифровая подпись (ЭЦП)"
 readme = "README.md"
 requires-python = ">=3.11"
-dependencies = []
+dependencies = [
+    "cryptography>=42.0",
+    "fastapi>=0.115",
+    "uvicorn[standard]>=0.32",
+    "httpx>=0.27",
+]
+
+[project.scripts]
+laba2-server = "app.server:main"
+laba2-client = "app.client:main"
+
+[build-system]
+requires = ["hatchling"]
+build-backend = "hatchling.build"
+
+[tool.hatch.build.targets.wheel]
+packages = ["app"]
