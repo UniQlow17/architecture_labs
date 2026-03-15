@@ -49,4 +49,5 @@ dependencies = [
     "email-validator>=2.0.0",
     "python-multipart>=0.0.9",
     "ruff>=0.8.0",
+    "pyyaml>=6.0.3",
 ]
